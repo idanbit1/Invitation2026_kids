@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הזמנה: קפה תרבות - ילדים מול מסכים</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Heebo', sans-serif;
+            background-color: #0f172a; /* כחול כהה עמוק - רקע "מסך" */
+            color: #f1f5f9;
+        }
+        .digital-glow {
+            text-shadow: 0 0 10px rgba(56, 189, 248, 0.5), 0 0 20px rgba(56, 189, 248, 0.3);
+        }
+        .timer-glow {
+            text-shadow: 0 0 8px rgba(245, 158, 11, 0.6);
+        }
+        .screen-frame {
+            border: 2px solid #334155;
+            background: #1e293b;
+            border-radius: 2rem;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(56, 189, 248, 0.1);
+        }
+        .coffee-accent {
+            background: linear-gradient(135deg, #a67c52 0%, #d4a373 100%);
+        }
+        .digital-pattern {
+            background-image: radial-gradient(#334155 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .logo-container {
+            transition: transform 0.3s ease;
+        }
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="digital-pattern antialiased pb-20">
+
+    <!-- Header / Large Logos -->
+    <header class="bg-white p-6 sticky top-0 z-[100] shadow-xl border-b-4 border-amber-600">
+        <div class="max-w-md mx-auto flex justify-between items-center gap-4">
+            <!-- Merkaz Zeirim Logo -->
+            <div class="flex flex-col items-center flex-1 logo-container">
+                <div class="w-20 h-20 flex items-center justify-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs8bETUSG0dShLsHAVnibYBC728PeW1Q91klc8-8hxtw&s" 
+                         alt="מרכז צעירים קרית אתא" class="max-w-full max-h-full object-contain">
+                </div>
+                <span class="text-[10px] font-black text-blue-900 mt-2 text-center leading-tight">מרכז צעירים<br>קרית אתא</span>
+            </div>
+            
+            <!-- School Jerusalem Logo -->
+            <div class="flex flex-col items-center flex-1 logo-container border-x border-gray-100 px-2">
+                <div class="w-24 h-24 flex items-center justify-center">
+                    <img src="https://www.clicko.co.il/wp-content/uploads/2023/05/%D7%91%D7%99%D7%AA-%D7%A1%D7%A4%D7%A8-%D7%99%D7%A8%D7%95%D7%A9%D7%9C%D7%99%D7%9D-%D7%A7%D7%A8%D7%99%D7%AA-%D7%90%D7%AA%D7%90.jpg.webp" 
+                         alt="בי"ס ירושלים" class="max-w-full max-h-full object-contain">
+                </div>
+                <span class="text-[10px] font-black text-amber-900 mt-2 text-center leading-tight">בי"ס "ירושלים"<br>קרית אתא</span>
+            </div>
+
+            <!-- National Authority Logo -->
+            <div class="flex flex-col items-center flex-1 logo-container">
+                <div class="w-20 h-20 flex items-center justify-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTMBmeQ-T-YADQxym5hQVICPWNrjHNoqdOqA&s" 
+                         alt="הרשות לביטחון לאומי" class="max-w-full max-h-full object-contain">
+                </div>
+                <span class="text-[10px] font-black text-indigo-900 mt-2 text-center leading-tight uppercase">ביטחון לאומי<br>קהילתי</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-md mx-auto px-6 pt-10">
+        
+        <!-- Hero Section - Theme Focused -->
+        <section class="text-center mb-12">
+            <div class="inline-flex items-center px-4 py-1 coffee-accent text-white rounded-full text-xs font-black tracking-widest mb-6 shadow-lg">
+                <i data-lucide="coffee" class="ml-2 w-4 h-4"></i>
+                קפה תרבות
+            </div>
+            <div class="relative inline-block">
+                <h1 class="text-6xl font-black tracking-tighter mb-2 digital-glow italic text-sky-400">
+                    ילדים
+                </h1>
+                <h1 class="text-5xl font-black tracking-tighter mb-4 text-white">
+                    מול מסכים
+                </h1>
+                <div class="h-2 w-32 bg-sky-500 mx-auto rounded-full shadow-[0_0_15px_#0ea5e9]"></div>
+            </div>
+        </section>
+
+        <!-- Speaker Section - "Tablet" Frame -->
+        <section class="mb-14">
+            <div class="screen-frame p-6 flex flex-col items-center">
+                <div class="w-56 h-56 rounded-2xl overflow-hidden border-4 border-sky-500/30 shadow-2xl mb-6 transform hover:scale-105 transition-transform">
+                    <img src="https://start-over.co.il/wp-content/uploads/2022/06/image120.png" 
+                         alt="איתי מלר" 
+                         class="w-full h-full object-cover">
+                </div>
+                <div class="text-center">
+                    <h3 class="text-4xl font-black text-white mb-2">איתי מלר</h3>
+                    <p class="text-sky-300 font-bold text-base leading-tight">
+                        MA בחקר סכסוכים וגישור<br>
+                        <span class="text-amber-400 text-sm">מומחה בתחום תקשורת מניעת סיכון בקרב בני נוער</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Info Grid -->
+        <section class="grid grid-cols-2 gap-4 mb-8">
+            <!-- Date Card -->
+            <div class="bg-slate-800/80 border border-slate-700 p-5 rounded-3xl flex flex-col items-center text-center shadow-lg">
+                <div class="bg-sky-500/20 p-3 rounded-2xl mb-3">
+                    <i data-lucide="calendar" class="text-sky-400 w-6 h-6"></i>
+                </div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">תאריך האירוע</span>
+                <span class="text-xl font-black text-white leading-tight">26.02.2026<br>יום חמישי</span>
+                
+                <button onclick="addToCalendar()" class="mt-4 bg-sky-600 hover:bg-sky-500 text-white font-bold py-2 px-5 rounded-full flex items-center text-xs shadow-lg transition-all active:scale-95">
+                    <i data-lucide="bell-ring" class="ml-2 w-4 h-4"></i>
+                    שמירה ביומן
+                </button>
+            </div>
+            
+            <!-- Time & Countdown Card -->
+            <div class="bg-slate-800/80 border border-slate-700 p-5 rounded-3xl flex flex-col items-center text-center shadow-lg overflow-hidden">
+                <div class="bg-amber-500/20 p-3 rounded-2xl mb-3">
+                    <i data-lucide="clock" class="text-amber-500 w-6 h-6"></i>
+                </div>
+                <span class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">בשעה</span>
+                <span class="text-5xl font-black text-white leading-none my-1">19:00</span>
+                
+                <!-- Countdown Timer Section -->
+                <div class="mt-4 pt-3 border-t border-slate-700 w-full">
+                    <span class="text-[10px] font-bold text-amber-500 block mb-1">מתחילים בעוד:</span>
+                    <div id="countdown" class="text-[11px] font-black text-white timer-glow flex flex-col items-center gap-0.5">
+                        <div class="flex gap-1">
+                            <span id="days">--</span> <span>ימים</span>
+                        </div>
+                        <div class="flex gap-1">
+                            <span id="hours">--</span> <span>שעות</span>
+                        </div>
+                        <div class="flex gap-1">
+                            <span id="minutes">--</span> <span>דקות</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="mb-8">
+            <div class="bg-gradient-to-l from-slate-800 to-slate-900 rounded-3xl p-6 border border-slate-700 flex items-center justify-between shadow-xl">
+                <div class="flex items-center">
+                    <div class="bg-sky-500/10 p-4 rounded-2xl ml-4">
+                        <i data-lucide="map-pin" class="text-sky-400 w-7 h-7"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-500 uppercase">מיקום האירוע</h4>
+                        <p class="font-black text-white text-xl">באולם ספורט,<br>רופין 20, קרית אתא</p>
+                    </div>
+                </div>
+                <a href="https://waze.com/ul?q=רופין 20 קרית אתא" target="_blank" class="bg-sky-500 text-white p-4 rounded-full shadow-[0_0_15px_#0ea5e9] hover:bg-sky-400 transition-colors">
+                    <i data-lucide="navigation" class="w-7 h-7"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Content Card - Screen Style -->
+        <section class="bg-white rounded-[3rem] p-10 mb-10 shadow-[0_0_40px_rgba(0,0,0,0.4)] relative overflow-hidden text-slate-900 border-t-8 border-amber-600">
+            <div class="relative z-10">
+                <div class="flex items-center mb-6">
+                    <i data-lucide="info" class="text-amber-600 ml-2 w-6 h-6"></i>
+                    <h4 class="font-black text-xl uppercase tracking-tighter">מידע על ההרצאה</h4>
+                </div>
+                <p class="text-2xl font-black leading-tight mb-6 text-slate-800">
+                    הרצאה המעודכנת והרלוונטית ביותר כיום עבור הורים לילדים בגיל ההתבגרות – ועד לגילאי סוף בתי הספר היסודי (כיתות ג'–ט')
+                </p>
+                <div class="h-1 w-16 bg-amber-500 mb-6"></div>
+                <p class="text-lg leading-relaxed italic text-slate-600 font-medium">
+                    "בהרצאה כלים רבים העוזרים להורים לצלוח את התקופה הקריטית בה מפתח הילד את החוסן הרגשי, והחברתי שלו – בעידן הדיגיטלי"
+                </p>
+            </div>
+        </section>
+
+        <!-- Pricing & CTAs -->
+        <section class="space-y-4 mb-16">
+            <div class="flex items-center justify-around bg-slate-800/50 p-6 rounded-[2rem] border border-slate-700">
+                <div class="text-center">
+                    <span class="text-xs font-bold text-slate-400 block uppercase">להורי ביה"ס</span>
+                    <span class="text-4xl font-black text-amber-500">10 ₪</span>
+                </div>
+                <div class="w-px h-12 bg-slate-700"></div>
+                <div class="text-center">
+                    <span class="text-xs font-bold text-slate-400 block uppercase">אורחים</span>
+                    <span class="text-4xl font-black text-white">20 ₪</span>
+                </div>
+            </div>
+            
+            <!-- Paybox CTA -->
+            <a id="paybox-link" href="https://links.payboxapp.com/UqBqP6PEP0b" target="_blank" class="w-full bg-[#00aeef] hover:bg-sky-400 text-white font-black py-6 rounded-3xl flex items-center justify-center text-2xl shadow-[0_10px_20px_rgba(0,174,239,0.3)] transition-all active:scale-95 no-underline">
+                <div class="bg-white p-1 rounded-lg ml-4 shadow-md">
+                    <svg class="w-8 h-8 text-[#00aeef]" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 7h2v6h-2V7zm0 8h2v2h-2v-2z"/>
+                    </svg>
+                </div>
+                לתשלום ב-Paybox
+            </a>
+        </section>
+
+        <!-- Bio Section -->
+        <section class="border-t border-slate-700 pt-12 pb-20">
+            <h4 class="text-3xl font-black mb-6 text-white flex items-center">
+                <i data-lucide="user-check" class="ml-3 text-sky-400"></i>
+                על המרצה
+            </h4>
+            <div class="bg-slate-800/40 p-8 rounded-[2.5rem] border border-slate-700 shadow-inner text-slate-300 leading-relaxed text-justify">
+                <p class="text-lg">
+                    איתי מלר MA בחקר סכסוכים וגישור (אונ' ת"א). מרצה בעל וותק ומומחה בתחום תקשורת מניעת סיכון בקרב בני הנוער, המציע נקודת מבט חיובית, ואופטימית על נושא גיל ההתבגרות (תקשורת, מניעת סיכון ומיניות). בגישתו הייחודית מציע איתי מלר דרך יעילה יותר לפרק את התסבוכות שהפכו למנת חלקם של רבים מההורים ומהמתבגרים בעידן הדיגיטלי.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        lucide.createIcons();
+
+        // Countdown Logic
+        const targetDate = new Date("Feb 26, 2026 19:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance < 0) {
+                document.getElementById("countdown").innerHTML = "<span class='text-amber-500'>ההרצאה החלה!</span>";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+        }
+
+        // Update every minute
+        setInterval(updateCountdown, 1000 * 60);
+        updateCountdown(); // Initial call
+
+        function addToCalendar() {
+            const event = {
+                title: "הרצאת קפה תרבות: ילדים מול מסכים",
+                description: "מרצה: איתי מלר. מיקום: אולם ספורט קרית אתא",
+                location: "רופין 20, קרית אתא",
+                startTime: "20260226T190000",
+                endTime: "20260226T210000"
+            };
+
+            const icsData = [
+                "BEGIN:VCALENDAR",
+                "VERSION:2.0",
+                "BEGIN:VEVENT",
+                "DTSTAMP:20260217T143200Z",
+                `DTSTART:${event.startTime}`,
+                `DTEND:${event.endTime}`,
+                `LOCATION:${event.location}`,
+                `SUMMARY:${event.title}`,
+                `DESCRIPTION:${event.description}`,
+                "END:VEVENT",
+                "END:VCALENDAR"
+            ].join("\n");
+
+            const blob = new Blob([icsData], { type: "text/calendar;charset=utf-8" });
+            const link = document.createElement("a");
+            link.href = window.URL.createObjectURL(blob);
+            link.setAttribute("download", "lecture_screens_itay.ics");
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
+
